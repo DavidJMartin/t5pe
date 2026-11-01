@@ -1,0 +1,9 @@
+{
+  // src/core must stay pure: no DOM and no Node types are available here.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": []
+  },
+  "include": ["src/core"]
+}

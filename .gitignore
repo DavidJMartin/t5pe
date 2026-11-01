@@ -1,0 +1,35 @@
+### Node / Vite ###
+node_modules/
+dist/
+npm-debug.log*
+*.log
+
+### Take 5 editor ###
+# Synth backups: personal data. Never commit, never delete.
+backups/
+# Third-party (e.g. Sequential factory banks) and personal .syx files.
+fixtures/factory/
+fixtures/private/
+
+### Editors and OS ###
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+### Local planning notes and Claude Code config ###
+.scratch/
+.claude/
+CLAUDE.md
+
+### Kept local: only the app, its tests and the README are published ###
+docs/
+fixtures/
+tools/
+tsconfig.tools.json
+# Safety nets wherever these end up: synth dumps (backups, factory banks) and secrets.
+*.syx
+.env*

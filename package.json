@@ -1,0 +1,31 @@
+{
+  "name": "take5-editor",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck:app && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "npm run typecheck:app && tsc -p tsconfig.tools.json",
+    "typecheck:app": "tsc -p tsconfig.core.json && svelte-check --tsconfig tsconfig.json --fail-on-warnings",
+    "tool": "node --import tsx tools/cli.ts"
+  },
+  "devDependencies": {
+    "@julusian/midi": "^3.8.1",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/node": "^26.6.5",
+    "fake-indexeddb": "^6.2.6",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "dexie": "^4.4.7"
+  }
+}
