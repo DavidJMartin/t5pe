@@ -1,0 +1,6 @@
+// Cloudflare Workers deploy: a static site, served from the Vite build output. No server code.
+{
+  "name": "t5pe",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./dist" }
+}

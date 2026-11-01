@@ -33,3 +33,4 @@ tsconfig.tools.json
 # Safety nets wherever these end up: synth dumps (backups, factory banks) and secrets.
 *.syx
 .env*
+.wrangler/
